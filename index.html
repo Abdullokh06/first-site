@@ -2,12 +2,32 @@
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <title>yuwons first work</title>
-    <link rel="stylesheet" href="style.css"
+    <title>Yuwoon | Web developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>salom!</h1>
-    <p>bu mening birinchi web sahifam.</p>
-<p>bugun men web web devolopmentni boshladim</p>
+
+    <button class="toggle">🌙 Dark mode</button>
+
+    <div class="card">
+        <h1>Hi, im Yuwoon</h1>
+        <p>
+            I'm learning HTML and CSS.<br>
+            My goal is to make beautiful and useful websites
+        </p>
+
+        <a href="https://github.com/Abdullokh06" target="_blank" class="btn">
+            GitHub profile
+        </a>
+    </div>
+
+    <script>
+        const btn = document.querySelector('.toggle');
+        btn.onclick = () => {
+            document.body.classList.toggle('dark');
+        };
+    </script>
+
 </body>
 </html>
+
